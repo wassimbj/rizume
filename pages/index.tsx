@@ -4,6 +4,8 @@ import AboutSection from "../components/AboutSection";
 import ExperienceSection from "../components/ExperienceSection";
 import ProjectsSection from "../components/ProjectsSection";
 import SkillsSection from "../components/SkillsSection";
+import EducationSection from "../components/EducationSection";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -13,55 +15,11 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <header className="py-10 px-20 border-b border-gray-800">
-        <div className="flex justify-between flex-wrap">
-          <div>
-            <span className="text-4xl font-bold text-gray-300 block">
-              Wassim Ben Jdida
-            </span>
-            <span className="text-2xl text-gray-400 block">
-              Software Developer
-            </span>
-          </div>
+      <Header />
 
-          <div className="font-semibold">
-            <div
-              // TODO: show a "Copied" message
-              onClick={() =>
-                navigator.clipboard.writeText("wassimbenjdida@gmail.com")
-              }
-              className="flex mb-1 cursor-pointer hover:text-gray-300 transition"
-            >
-              <img
-                src="/images/at-sign.svg"
-                width="18px"
-                className="mr-1 block"
-              />
-              wassimbenjdida@gmail.com
-            </div>
-            <a href="#" className="flex mb-1 hover:text-gray-300 transition">
-              <img
-                src="/images/github.svg"
-                width="18px"
-                className="mr-1 block"
-              />
-              wassimbj
-            </a>
-            <a href="#" className="flex hover:text-gray-300 transition">
-              <img
-                src="/images/linkedin.svg"
-                width="18px"
-                className="mr-1 block"
-              />
-              wasssim-ben-jdida
-            </a>
-          </div>
-        </div>
-      </header>
-
-      <main className="px-20 mt-20">
-        <div className="grid grid-cols-2">
-          <div className="col-span-1 pr-10">
+      <main className="lg:px-20 md:px-10 px-5">
+        <div className="md:flex md:justify-between">
+          <div className="mt-14 w-full">
             {/* Bio */}
             <AboutSection />
             <br />
@@ -72,14 +30,24 @@ export default function Home() {
             <br />
             {/* Porjects */}
             <ProjectsSection />
+            <br />
+            <br />
           </div>
           {/* ------------------------------------ */}
-          <div className="col-span-1">
+          <div className="md:block hidden min-h-screen w-px mx-5 center bg-white bg-opacity-20 relative"></div>
+          {/* ------------------------------------ */}
+          <div className="md:mt-14 w-full">
             {/* Skills */}
             <SkillsSection />
+            <br />
+            <br />
+            {/* Education */}
+            <EducationSection />
           </div>
         </div>
       </main>
+
+      <div className="w-full pt-1 bg-gradient-to-r from-gray-900 to-indigo-700"></div>
     </Layout>
   );
 }
