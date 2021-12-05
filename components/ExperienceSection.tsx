@@ -7,8 +7,9 @@ export default function ExperienceSection() {
   return (
     <section>
       <SectionTitle title="Experience" />
-      {experienceData.map((data) => (
+      {experienceData.map((data, idx) => (
         <ExperianceCard
+          key={idx}
           company={data.company}
           desc={data.desc}
           from={data.interval[0]}

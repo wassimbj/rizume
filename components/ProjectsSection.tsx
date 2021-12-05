@@ -7,8 +7,9 @@ export default function ProjectsSection() {
   return (
     <section>
       <SectionTitle title="Projects" />
-      {projectsData.map((project) => (
+      {projectsData.map((project, idx) => (
         <ProjectCard
+          key={idx}
           title={project.name}
           subtitle={project.title}
           description={project.desc}

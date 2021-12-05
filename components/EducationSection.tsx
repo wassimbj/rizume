@@ -8,8 +8,9 @@ export default function EducationSection() {
     <section>
       <SectionTitle title="Education" />
 
-      {educationData.map((data) => (
+      {educationData.map((data, idx) => (
         <EducationCard
+          key={idx}
           school={data.school_name}
           industry={data.industry}
           interval={data.interval}

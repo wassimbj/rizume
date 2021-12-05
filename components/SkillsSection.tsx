@@ -9,8 +9,8 @@ export default function SkillsSection() {
       <SectionTitle title="Skills" />
 
       <div className="flex items-center flex-wrap">
-        {skillsData.map(skill => (
-          <SkillCard skill={skill} />
+        {skillsData.map((skill, idx) => (
+          <SkillCard key={idx} skill={skill} />
         ))}
       </div>
     </section>
