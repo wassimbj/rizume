@@ -9,7 +9,7 @@ export default function LinkedinIcon({ color, width, className }: IconProps) {
         height={width}
         viewBox="0 0 24 24"
         fill="none"
-        stroke={color}
+        stroke={color || "#bdddff"}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

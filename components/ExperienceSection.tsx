@@ -24,6 +24,15 @@ export default function ExperienceSection() {
         to="Jan 2019"
         job="Software Developer"
       />
+      <ExperianceCard
+        company="Apple"
+        desc="Voluptas tempora et enim veritatis. Expedita voluptas voluptatem et.
+    Laudantium delectus illo possimus tenetur. In incidunt qui omnis. Vel
+    placeat aut est quis"
+        from="Jul 2005"
+        to="Jan 2013"
+        job="Software Engineer"
+      />
     </section>
   );
 }

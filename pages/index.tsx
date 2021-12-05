@@ -17,7 +17,7 @@ export default function Home() {
       {/* Header */}
       <Header />
 
-      <main className="lg:px-20 md:px-10 px-5">
+      <main className="lg:px-20 md:px-10 px-3">
         <div className="md:flex md:justify-between">
           <div className="mt-14 w-full">
             {/* Bio */}
@@ -34,7 +34,7 @@ export default function Home() {
             <br />
           </div>
           {/* ------------------------------------ */}
-          <div className="md:block hidden min-h-screen w-px mx-5 center bg-white bg-opacity-20 relative"></div>
+          <div className="md:block hidden min-h-screen w-px mx-5 center bg-lightBlue bg-opacity-10 relative"></div>
           {/* ------------------------------------ */}
           <div className="md:mt-14 w-full">
             {/* Skills */}
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </main>
 
-      <div className="w-full pt-1 bg-gradient-to-r from-gray-900 to-indigo-700"></div>
+      <div className="w-full h-px bg-gradient-to-r from-indigo-300 to-blue-600"></div>
     </Layout>
   );
 }
