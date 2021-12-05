@@ -14,40 +14,50 @@ export default function Home() {
         <title>Rizume</title>
       </Head>
 
-      {/* Header */}
-      <Header />
+      <div className="absolute top-0 left-0 w-full h-full" id="main-bg"></div>
 
-      <main className="lg:px-20 md:px-10 px-3">
-        <div className="md:flex md:justify-between">
-          <div className="mt-14 w-full">
-            {/* Bio */}
-            <AboutSection />
-            <br />
-            <br />
-            {/* Experience */}
-            <ExperienceSection />
-            <br />
-            <br />
-            {/* Porjects */}
-            <ProjectsSection />
-            <br />
-            <br />
-          </div>
-          {/* ------------------------------------ */}
-          <div className="md:block hidden min-h-screen w-px mx-5 center bg-lightBlue bg-opacity-10 relative"></div>
-          {/* ------------------------------------ */}
-          <div className="md:mt-14 w-full">
-            {/* Skills */}
-            <SkillsSection />
-            <br />
-            <br />
-            {/* Education */}
-            <EducationSection />
-          </div>
+      <div className="z-10 relative">
+        {/* Header */}
+        <div className="py-10 lg:px-40 md:px-10 px-3 border-b border-lightBlue border-opacity-10">
+          <Header />
         </div>
-      </main>
 
-      <div className="w-full h-px bg-gradient-to-r from-indigo-300 to-blue-600"></div>
+        <main className="lg:px-40 md:px-10 px-3 z-10 relative">
+          <div className="md:flex md:justify-between">
+            <div className="mt-14 w-full">
+              {/* Bio */}
+              <AboutSection />
+              <br />
+              <br />
+              <br />
+              {/* Experience */}
+              <ExperienceSection />
+              <br />
+              <br />
+              <br />
+              {/* Porjects */}
+              <ProjectsSection />
+              <br />
+              <br />
+              <br />
+            </div>
+            {/* ------------------------------------ */}
+            <div className="md:block hidden min-h-screen w-px mx-5 center bg-lightBlue bg-opacity-10 relative"></div>
+            {/* ------------------------------------ */}
+            <div className="md:mt-14 w-full">
+              {/* Skills */}
+              <SkillsSection />
+              <br />
+              <br />
+              <br />
+              {/* Education */}
+              <EducationSection />
+              <br />
+              <br />
+            </div>
+          </div>
+        </main>
+      </div>
     </Layout>
   );
 }

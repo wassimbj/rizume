@@ -3,7 +3,7 @@ import React from "react";
 interface EduProps {
   school: string;
   industry: string;
-  interval: Array<number>;
+  interval: Array<string>;
 }
 export default function EducationCard({
   school,

@@ -1,22 +1,20 @@
 import React from "react";
 import EducationCard from "./EducationCard";
 import SectionTitle from "./SectionTitle";
+import educationData from "../meta/education.json";
 
 export default function EducationSection() {
   return (
     <section>
       <SectionTitle title="Education" />
 
-      <EducationCard
-        school="Some university"
-        industry="Computer Science"
-        interval={[2020, 2023]}
-      />
-      <EducationCard
-        school="Some other school"
-        industry="Bachelor in Computer Science"
-        interval={[2015, 2019]}
-      />
+      {educationData.map((data) => (
+        <EducationCard
+          school={data.school_name}
+          industry={data.industry}
+          interval={data.interval}
+        />
+      ))}
     </section>
   );
 }

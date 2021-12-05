@@ -15,8 +15,12 @@ export default function Layout({ children }) {
         <meta name="og:title" content="rizume" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <main className="bg-darkBlue text-white text-opacity-60 whitespace-pre-wrap">
+      <main className="text-white text-opacity-60 whitespace-pre-wrap">
         {children}
+        {/* <div
+          className="absolute top-0 left-0 w-full h-full"
+          id="main-bg"
+        ></div> */}
       </main>
     </div>
   );

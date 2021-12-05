@@ -1,38 +1,21 @@
 import React from "react";
 import ExperianceCard from "./ExperianceCard";
 import SectionTitle from "./SectionTitle";
+import experienceData from "../meta/experience.json";
 
 export default function ExperienceSection() {
   return (
     <section>
       <SectionTitle title="Experience" />
-      <ExperianceCard
-        company="Github"
-        desc="Voluptas tempora et enim veritatis. Expedita voluptas voluptatem et.
-    Laudantium delectus illo possimus tenetur. In incidunt qui omnis. Vel
-    placeat aut est quis"
-        from="Jul 2020"
-        job="Software Developer"
-        to="Present"
-      />
-      <ExperianceCard
-        company="Google"
-        desc="Voluptas tempora et enim veritatis. Expedita voluptas voluptatem et.
-    Laudantium delectus illo possimus tenetur. In incidunt qui omnis. Vel
-    placeat aut est quis"
-        from="Jul 2015"
-        to="Jan 2019"
-        job="Software Developer"
-      />
-      <ExperianceCard
-        company="Apple"
-        desc="Voluptas tempora et enim veritatis. Expedita voluptas voluptatem et.
-    Laudantium delectus illo possimus tenetur. In incidunt qui omnis. Vel
-    placeat aut est quis"
-        from="Jul 2005"
-        to="Jan 2013"
-        job="Software Engineer"
-      />
+      {experienceData.map((data) => (
+        <ExperianceCard
+          company={data.company}
+          desc={data.desc}
+          from={data.interval[0]}
+          job={data.job}
+          to={data.interval[1]}
+        />
+      ))}
     </section>
   );
 }

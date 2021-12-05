@@ -1,0 +1,12 @@
+[
+   {
+      "school_name": "ISITcom",
+      "industry": "Computer science",
+      "interval": ["2020", "2023"]
+   },
+   {
+      "school_name": "Othman Chatti",
+      "industry": "Bachelor in Computer Science",
+      "interval": ["2016", "2020"]
+   }
+]

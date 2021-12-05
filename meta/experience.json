@@ -1,0 +1,20 @@
+[
+  {
+    "company": "Github",
+    "job": "Software Developer",
+    "interval": ["Jul 2020", "Present"],
+    "desc": "Sit fugiat fugit. Quia assumenda et reprehenderit voluptas. Earum aut iste eligendi recusandae tenetur."
+  },
+  {
+    "company": "Facebook",
+    "job": "Software Developer",
+    "interval": ["Jul 2020", "Present"],
+    "desc": "Sit fugiat fugit. Quia assumenda et reprehenderit voluptas. Earum aut iste eligendi recusandae tenetur."
+  },
+  {
+    "company": "Google",
+    "job": "Software Developer",
+    "interval": ["Jul 2020", "Present"],
+    "desc": "Sit fugiat fugit. Quia assumenda et reprehenderit voluptas. Earum aut iste eligendi recusandae tenetur."
+  }
+]
